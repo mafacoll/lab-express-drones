@@ -1,1 +1,13 @@
 <h2>Create a new drone</h2>
+
+<form method="POST" action="/drones/create/{{drone._id}}/edit">
+  <div class="mb-3">
+    <label class="form-label" >Title</label>
+    <input class="form-control" value="{{drone.title}}" type="text" name="title">
+    <br>
+    <label class="form-label" >Description</label>
+    <input class="form-control" value="{{drone.description}}" type="text" name="description">
+    <br>
+    <button class="btn btn-primary" type="submit">EDIT</button>
+  </div>
+</form>
